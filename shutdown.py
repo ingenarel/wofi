@@ -25,9 +25,10 @@ launch = subprocess.check_output(
             "--prompt",
             "Power Menu"
             ),
-        stdin=chosen.stdout
+        stdin=chosen.stdout,
+        text=True
     )
 for stuff in x:
-    if stuff == str(launch)[2:-3]:
+    if stuff == launch.strip():
         os.system(x[stuff])
         break
