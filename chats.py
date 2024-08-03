@@ -1,8 +1,8 @@
 import subprocess, os
 x = {
-    "   Discord": "hyprctl dispatch exec discord",
-    "󰙯  Discord Start Minimized": "hyprctl dispatch exec 'discord --start-minimized'",
-    "    Discordo": "killall Discord & hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e discordo --token",
+    "   Vesktop": "hyprctl dispatch exec vesktop",
+    "󰙯   Vesktop Start Minimized": "hyprctl dispatch exec 'vesktop --start-minimized'",
+    "   Discordo": "killall electron & hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e discordo --token",
     }
 
 chosen = subprocess.Popen(
