@@ -1,8 +1,9 @@
 import subprocess, os
 x = {
-    "   Vesktop": "hyprctl dispatch exec vesktop",
-    "󰙯   Vesktop Start Minimized": "hyprctl dispatch exec 'vesktop --start-minimized'",
+    "   Vesktop": "vesktop",
+    "󰙯   Vesktop Start Minimized": "vesktop --start-minimized",
     "   Discordo": "killall electron & hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e discordo --token",
+    "󰋾   Instagram": "hyprctl dispatch exec \"[float; size 90% 90%; center; fakefullscreen]\" 'mullvad-browser --new-window www.instagram.com'"
     }
 
 chosen = subprocess.Popen(
