@@ -1,7 +1,9 @@
 import subprocess, os
 x = {
     "⏻  Shutdown": "systemctl poweroff",
+    "󰚰  Update ⏻  Shutdown": "kitty -e paru -Syyu ; systemctl poweroff",
     "  Reboot": "systemctl reboot",
+    "󰚰  Update   Reboot": "kitty -e paru -Syyu ; systemctl reboot",
     "⏼  Hibernate": "systemctl hibernate",
     "󰤄  Suspend": "systemctl suspend",
     "󰿅  Logout": "hyprctl dispatch exit 1",
@@ -20,7 +22,7 @@ launch = subprocess.check_output(
         (
             "wofi",
             "--width=190",
-            "--height=190",
+            "--height=220",
             "-b",
             "-d",
             "--prompt",
