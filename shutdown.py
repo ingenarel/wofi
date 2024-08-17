@@ -7,6 +7,7 @@ x = {
     "⏼  Hibernate": "systemctl hibernate",
     "󰤄  Suspend": "systemctl suspend",
     "󰿅  Logout": "hyprctl dispatch exit 1",
+    "󰷛  LockScreen": "hyprlock",
     }
 
 chosen = subprocess.Popen(
@@ -21,8 +22,8 @@ chosen = subprocess.Popen(
 launch = subprocess.check_output(
         (
             "wofi",
-            "--width=190",
-            "--height=220",
+            "--width=13%",
+            "--height=27%",
             "-b",
             "-d",
             "--prompt",
