@@ -1,9 +1,9 @@
 import subprocess, os
 x = {
     "⏻  Shutdown": "systemctl poweroff",
-    "󰚰  Update ⏻  Shutdown": "kitty -e paru -Syyu ; systemctl poweroff",
+    "󰚰  Update ⏻  Shutdown": "hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e paru -Syyu && systemctl poweroff'",
     "  Reboot": "systemctl reboot",
-    "󰚰  Update   Reboot": "kitty -e paru -Syyu ; systemctl reboot",
+    "󰚰  Update   Reboot": "hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e paru -Syyu && systemctl reboot'",
     "⏼  Hibernate": "systemctl hibernate",
     "󰤄  Suspend": "systemctl suspend",
     "󰿅  Logout": "hyprctl dispatch exit 1",
