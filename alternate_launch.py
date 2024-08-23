@@ -1,8 +1,8 @@
 import subprocess, os
 x = {
-    "   Vesktop":                  "hyprctl dispatch exec vesktop",
     "󰙯   Vesktop Start Minimized":  "hyprctl dispatch exec \"vesktop --start-minimized\"",
     "   Discordo":                 "killall electron & hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e discordo --token",
+    "Minecraft":                    "hyprctl dispatch exec \"~/Downloads/prismlauncher/./PrismLauncher-Cracked-Linux-x86_64.AppImage\""
     }
 
 chosen = subprocess.Popen(
