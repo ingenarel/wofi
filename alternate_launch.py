@@ -4,6 +4,7 @@ x = {
     "   Discordo":                 "killall electron & hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e discordo --token",
     "Minecraft":                    "hyprctl dispatch exec \"~/Downloads/prismlauncher/./PrismLauncher-Cracked-Linux-x86_64.AppImage\"",
     "Witcher 3":                    "cd /mnt/E/'New folder'/'The Witcher 3 - Wild Hunt'/bin/x64/ && wine witcher3.exe & disown",
+    "Skyrim":                       "cd /mnt/D/skyrim && wine skse64_loader.exe & disown",
     }
 
 chosen = subprocess.Popen(
@@ -19,7 +20,7 @@ launch = subprocess.check_output(
         (
             "wofi",
             "--width=200",
-            "--height=150",
+            "--height=180",
             "-b",
             "-d",
             "--prompt",
