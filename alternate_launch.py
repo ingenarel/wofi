@@ -2,7 +2,7 @@ import subprocess, os
 x = {
     "󰙯   Vesktop Start Minimized":  "hyprctl dispatch exec \"vesktop --start-minimized\"",
     "   Discordo":                 "killall electron & hyprctl dispatch exec \"[float; size 90% 90%; center]\" 'kitty -e discordo --token",
-    "Minecraft":                    "hyprctl dispatch exec \"~/Downloads/prismlauncher/./PrismLauncher-Cracked-Linux-x86_64.AppImage\"",
+    "Minecraft":                    "hyprctl dispatch exec \"~/Downloads/PrismLauncher-Linux-x86_64-9.0.AppImage\"",
     "Witcher 3":                    "cd /mnt/E/'New folder'/'The Witcher 3 - Wild Hunt'/bin/x64/ && wine witcher3.exe & disown",
     "Skyrim":                       "cd /mnt/D/skyrim && wine skse64_loader.exe & disown",
     }
